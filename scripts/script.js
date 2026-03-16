@@ -1,3 +1,8 @@
+const synoElement = (arr) => {
+    const getSynonyms = arr.map((Element) =>`<span class = "btn">${Element}</span>`)
+    return (getSynonyms.join(" "));
+}
+
 const loadLesson = () =>{
     fetch('https://openapi.programming-hero.com/api/levels/all')
     .then(Response => Response.json())
@@ -91,9 +96,7 @@ const showWords = (words) => {
                 <p class="font-medium text-2xl">সমার্থক শব্দ গুলো :</p>
             
                 <div class="flex gap-2">
-                    <p class="p-2 rounded-sm bg-[#1A91FF20]">Enthusiastic</p>
-                    <p class="p-2 rounded-sm bg-[#1A91FF20]">excited</p>
-                    <p class="p-2 rounded-sm bg-[#1A91FF20]">keen</p>
+                    ${synoElement(wordDetails.synonyms)}
                 </div>
         `;
         document.getElementById('word_modal').showModal();
