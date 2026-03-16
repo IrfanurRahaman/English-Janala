@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala</title>
+
+            <!-- font awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <!-- daisyUI and Tailwind CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    
+            <!-- poppins and bangla font integration -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        
+
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+                    <!-- navbar -->
+    <header>
+        <div class="navbar bg-base-100 shadow-sm px-20">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+                        <li><a><i class="fa-solid fa-book-open"></i>Learn</a></li>
+                        <li><a><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                    </ul>
+                </div>
+                
+                <a class="btn btn-ghost text-xl font-bold">English<span><img src="assets/logo.png" alt=""></span>জানালা</a>
+            </div>
+
+            <div class="navbar-end hidden lg:flex">
+              <div class="flex gap-4">
+                    <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+
+                    <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a>
+
+                    <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+                    <!-- hero section -->
+    <section class="w-11/12 mx-auto flex-col-reverse flex md:flex-row justify-between items-center mb-24 md:mb-48">
+        <div class="texts">
+            <h1 class="text-4xl font-bold mb-6"><span class="text-[#00BCFF]">English </span>is Easy!!</h1>
+            <p class="bangla-font mb-6">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+
+            <div class="flex flex-col gap-5 w-80">
+                <input type="text" class="p-2 rounded-md border border-black/40" placeholder="Enter Your Name">
+                <input type="password" class="p-2 rounded-md border border-black/40" placeholder="password">
+
+                <button class="btn btn-primary w-30">Get Started</button>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="assets/hero-student.png" alt="">
+        </div>
+
+    </section>
+
+
+                    <!-- buttons section -->
+
+    <section class="w-11/12 mx-auto flex flex-col items-center mb-12">
+        <h2 class="text-2xl font-bold mb-8"><span class="text-[#00BCFF]">Let's </span>Learn Vocabularies</h2>
+
+        <div id="lessons-container" class="grid grid-cols-3 md:grid-cols-7 gap-4 ">
+
+        </div>
+    </section>     
+    
+                    <!-- cards section -->
+
+    <section id="words-container" class="bg-gray-200 w-11/12 flex flex-col sm:w-10/12 mx-auto p-2 sm:p-8 rounded-3xl mb-48 sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-8">
+        <!-- <div class="text-center bg-white p-14 rounded-xl">
+            <div class="space-y-6 mb-14">
+                <h3 class="font-bold text-3xl">Eager</h3>
+                <p class="font-medium text-xl">Meaning/Pronounciation</p>
+                <p class="bangla-font font-semibold text-3xl text-gray-700">"আগ্রহী/ইগার"</p>
+            </div>
+
+            <div class="flex justify-between">
+                <button><i class="fa-solid fa-circle-info"></i></button>
+                <button><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+        </div> -->
+
+        <div class="bg-gray-200 w-11/12 py-10 text-center rounded-3xl col-span-full">
+            <p class="bangla-font text-gray-500 mb-3">আপনি এখনো কোন Lesson Select করেন নি</p>
+
+            <h2 class="text-4xl font-medium"><span class="bangla-font">একটি</span> Lesson Select <span class="bangla-font">করুন।</span></h2>
+        </div>
+<!-- 
+        <div class= "flex flex-col items-center bg-gray-200 w-11/12 py-10 text-center rounded-3xl col-span-full ">
+            <img class="w-24 mb-4" src="assets/alert-error.png" alt="">
+
+            <p class="bangla-font text-gray-500 mb-3">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+
+            <h2 class="text-4xl font-medium">নেক্সট Lesson এ যান</h2>
+        </div> -->
+    </section>         
+    
+    
+                    <!-- modal section -->
+     
+    <!-- Open the modal using ID.showModal() method -->
+
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-container" class="border border-gray-300 rounded-xl p-6">
+                <!-- <h3 class="text-4xl font-semibold mb-8">Eager (ইগার)</h3>
+                <p class="font-semibold text-2xl">Meaning :</p>
+                <p class="bangla-font text-2xl mb-8">আগ্রহী</p>
+                <p class="font-semibold text-2xl">Example :</p>
+                <p class="text-xl mb-8">The kids were eager to open their gifts.</p>
+                <p class="font-medium text-2xl">সমার্থক শব্দ গুলো :</p>
+            
+                <div class="flex gap-2">
+                    <p class="p-2 rounded-sm bg-[#1A91FF20]">Enthusiastic</p>
+                    <p class="p-2 rounded-sm bg-[#1A91FF20]">excited</p>
+                    <p class="p-2 rounded-sm bg-[#1A91FF20]">keen</p>
+                </div> -->
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
