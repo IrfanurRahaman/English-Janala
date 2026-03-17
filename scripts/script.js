@@ -47,11 +47,7 @@ const showWords = (words) => {
         `
     }
 
-
-
-
-
-
+            // to get each word
 
     words.forEach(word => {
         const wordDiv = document.createElement('div');
